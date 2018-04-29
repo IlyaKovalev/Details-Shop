@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.162-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ExecuteProgram.ControllerRegistration">
+   <children>
+      <TextField fx:id="NameField" layoutX="215.0" layoutY="119.0" promptText="Name" />
+      <TextField fx:id="EmailField" layoutX="215.0" layoutY="163.0" promptText="Email" />
+      <TextField fx:id="PasswordField" layoutX="215.0" layoutY="249.0" promptText="password" />
+      <Button fx:id="Sign_Up_Button" layoutX="226.0" layoutY="290.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" text="Sign Up" />
+      <TextField fx:id="Phone_Number_Field" layoutX="215.0" layoutY="200.0" promptText="phone number" />
+      <Label fx:id="Notification_Error_Label" layoutX="282.0" layoutY="63.0" textFill="#cd1212">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

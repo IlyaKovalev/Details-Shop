@@ -1,0 +1,38 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context = "http://www.springframework.org/schema/context"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+    <context:annotation-config/>
+
+    <bean id="Detail" class="Entity.Detail">
+        <property name="id" value="0" />
+        <property name="name" value="NULL"/>
+        <property name="description" value="NULL" />
+        <property name="count" value="0" />
+        <property name="price" value="0" />
+    </bean>
+
+    <bean id="Customer" class="Entity.Customer">
+        <property name="name" value="LOL"/>
+        <property name="phone_number" value="0" />
+        <property name="email" value="NULL" />
+        <property name="password" value="0" />
+    </bean>
+
+    <bean id="list" class="Entity.Shopping_list">
+    </bean>
+
+    <bean id="CustomerDAOimpl" class="DAOimpl.CustomerDAOimpl">
+    </bean>
+
+    <bean id="DetailDAOimpl" class="DAOimpl.DetailDAOimpl">
+    </bean>
+
+   <bean id="Shopping_list" class="DAOimpl.Shopping_listDAOimpl">
+    </bean>
+
+</beans>
